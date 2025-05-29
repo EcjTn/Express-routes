@@ -5,17 +5,9 @@ app.get("/", (req, res) => {
     res.json({"message": "Hello Main"});
 })
 
-
-
 const userRoute = require("./user/users")
 
-
-
 app.use("/users", userRoute)
-
-
-
-
 
 
 
