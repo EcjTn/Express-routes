@@ -9,4 +9,4 @@ const userRoute = require("./user/users")
 
 app.use("/users", userRoute)
 
-//app.listen(8000)
+app.listen(8000)
