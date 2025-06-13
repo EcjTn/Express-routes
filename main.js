@@ -4,8 +4,6 @@ const app = express()
 
 app.use(express.json())
 
-
-
 app.get('/', (req,res) => {
     res.json("Welcome")
 })
@@ -13,9 +11,6 @@ app.get('/', (req,res) => {
 app.get('/database', (req,res) => {
     res.send(users)
 })
-
-
-
 
 
 app.post('/admin', (req,res) => {
@@ -31,8 +26,6 @@ app.post('/admin', (req,res) => {
 
 
 })
-
-
 
 
 app.listen(8000, () => console.log("[*] Streaming on port 8000"))
