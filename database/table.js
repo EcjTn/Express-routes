@@ -1,4 +1,4 @@
-const users = [
+export const users = [
   { username: "john_doe", password: "password123" },
   { username: "alice_smith", password: "qwerty456" },
   { username: "charlie99", password: "abc123" },
@@ -55,7 +55,3 @@ const users = [
   { username: "nathan_w", password: "wind123" },
   { username: "savannah_m", password: "applepie" }
 ];
-
-
-
-export { users };
