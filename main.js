@@ -21,11 +21,9 @@ app.post('/admin', (req,res) => {
     if(!userData){return res.send("no found")}
 
     if(userData){
+        res.json({detail: "Logged in as admin"})
         console.log("[  *  ] Admin logged in")
     }
 
-
 })
-
-
 app.listen(8000, () => console.log("[*] Streaming on port 8000"))
