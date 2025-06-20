@@ -18,7 +18,7 @@ app.post('/admin', (req,res) => {
     const userData = users.find(data => data.username === checkAdmin.username && data.password === checkAdmin.password)
     console.log(userData)
 
-    if(!userData){return res.send("no found")}
+    if(!userData){return res.send("Not found")}
 
     if(userData){
         res.json({detail: "Logged in as admin"})
